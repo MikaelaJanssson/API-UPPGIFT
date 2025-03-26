@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(45deg, #fefffe, #75a179, #0e4713);
+  height: 100px;
+}
+body {
+  background-color: #8dac90;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  color: #76828b;
+  margin-top: 20px;
+  font-family: "Dancing Script", cursive;
+  font-size: 50px;
+  color: black;
+}
+
+/*CONTAINER STARTS */
+#users {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+}
+
+/*CARDS*/
+.user-card {
+  background: rgb(253, 255, 254);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  text-align: center;
+  width: 100%;
+  max-width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/*NAME ON CARDS*/
+.user-card h3 {
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+/*INFO ON CARDS*/
+.user-card p {
+  margin: 5px 0;
+  color: #000000;
+}
+
+/*DOLD INFO*/
+.details {
+  margin-top: 10px;
+  padding: 10px;
+  background: rgb(253, 253, 253);
+  border-radius: 5px;
+  display: none;
+  box-shadow: 2px 2px 2px 1px;
+}
+
+/*BUTTONS*/
+button {
+  background-color: #90c78ead;
+  color: rgb(0, 0, 0);
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.2s ease-in-out;
+}
+
+/*EFFEKTER*/
+button:hover {
+  background-color: #a5c797;
+}
+
+.user-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/*FOOTER*/
+footer {
+  background: linear-gradient(45deg, #075c0e, #75a179, #fefffe);
+  height: 100px;
+  width: 100%;
+  margin-top: auto;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  padding-top: 30px;
+}
+
+/*ICONS*/
+#socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-size: 25px;
+}
+
+.socials-icon a {
+  color: black;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 600px) {
+  #users {
+    grid-template-columns: 1fr;
+  }
+
+  .user-card {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
