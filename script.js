@@ -2,7 +2,7 @@ function getAllUsers() {
   fetch("https://jsonplaceholder.typicode.com/users")
     .then((response) => {
       if (!response.ok) {
-        throw new Error("Network response was not ok");
+        throw new Error("Fel vid hämtning : ");
       }
       return response.json();
     })
