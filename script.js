@@ -8,7 +8,7 @@ function getAllUsers() {
     })
     .then((users) => {
       const container = document.getElementById("users");
-      container.innerHTML = ""; // Rensar tidigare innehållet på sidan
+      container.innerHTML = "";
 
       //använder createElement pga ökad säkerhet
       users.forEach((user) => {
@@ -28,7 +28,7 @@ function getAllUsers() {
         const email = document.createElement("p");
         email.innerHTML = `<strong>Email:</strong> ${user.email}`;
 
-        // Skapa en div för detaljerad information (som är dold från början)
+        // div för detaljerad information (som är dold från början)
         const hiddenDiv = document.createElement("div");
         hiddenDiv.classList.add("details");
         hiddenDiv.style.display = "none"; // Dold från start
