@@ -6,6 +6,7 @@
 header {
   background: linear-gradient(45deg, #fefffe, #75a179, #0e4713);
   height: 100px;
+  width: 100%;
 }
 body {
   background-color: #8dac90;
@@ -15,6 +16,7 @@ body {
   flex-direction: column;
   align-items: stretch;
   min-height: 100vh;
+  width: 100%;
 }
 
 h1 {
